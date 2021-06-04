@@ -1,0 +1,7 @@
+{% block sas_shortcode_component_product %}
+    {% for item in product %}
+        {% sw_include '@Storefront/storefront/component/product/card/box.html.twig' with {
+            product: item
+        } %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{
+    "name": "sas/shortcode",
+    "description": "SasShortCode",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "keywords": ["shortcode", "shopware"],
+    "autoload": {
+        "psr-4": {
+            "SasShortcode\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "~6.4.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SasShortcode\\SasShortcode",
+        "label": {
+            "de-DE": "SasShortCode plugin",
+            "en-GB": "SasShortCode plugin"
+        },
+        "manufacturerLink": {
+            "en-GB": "https://shapeandshift.dev",
+            "de-DE": "https://shapeandshift.dev"
+        },
+        "supportLink": {
+            "de-DE": "https://shapeandshift.dev",
+            "en-GB": "https://shapeandshift.dev"
+        }
+    }
+}
