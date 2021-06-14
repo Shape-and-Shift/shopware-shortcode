@@ -1,0 +1,35 @@
+{% block sas_shortcode_component_category_item %}
+    {% block sas_shortcode_component_category_information %}
+        <div class="row">
+            {% block sas_shortcode_component_category_image_text_left_inner %}
+                <div class="col-md-6">
+                    {% sw_thumbnails 'navigation-flyout-teaser-image-thumbnails' with {
+                        media: category.media,
+                        sizes: {
+                            'default': '310px'
+                        },
+                        attributes: {
+                            'alt': (category.media.translated.alt ?: ''),
+                            'title': (category.media.translated.title ?: ''),
+                            'data-object-fit': 'cover'
+                        }
+                    } %}
+                </div>
+            {% endblock %}
+
+            <div class="col-md-6">
+                {% block sas_shortcode_component_category_image_text_right_inner %}
+                    {{ category.translated.description }}
+                {% endblock %}
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block sas_shortcode_component_category_details_button %}
+        <div class="m-2">
+            <a href="{{ category_url(category) }}" class="btn btn-block btn-light" title="Details">
+                {{ "sas-shortcode.boxCategoryDetails"|trans|striptags }}
+            </a>
+        </div>
+    {% endblock %}
+{% endblock %}

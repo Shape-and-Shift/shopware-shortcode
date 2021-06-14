@@ -1,0 +1,7 @@
+{% block sas_shortcode_component_category %}
+    {% for item in category %}
+        {% sw_include '@Storefront/storefront/component/shortcode/partials/category-item.html.twig' with {
+            category: item
+        } %}
+    {% endfor %}
+{% endblock %}
