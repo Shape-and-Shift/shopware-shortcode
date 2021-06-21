@@ -2,6 +2,9 @@
 
 Use Wordpress like Shortcodes within the Text Editor in Shopware 6.
 
+<a href="k4mbhUD7vQ4" target="_blank"><img width="818" alt="Bildschirmfoto 2021-04-05 um 10 35 50" src="https://user-images.githubusercontent.com/8193345/122733773-2994cb80-d286-11eb-9372-4bdd1116b544.png"></a>
+
+
 ### Configuration
 
 After the plugin installation, you are now able to use these two shortcodes from within the Shopware Editor or CMS page as well.
