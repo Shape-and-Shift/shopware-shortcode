@@ -82,7 +82,7 @@ class ShortCodeResolver
 
         $context = $salesChannelContext->getContext();
 
-        if ($entityName = 'icon') {
+        if ($entityName == 'icon') {
             $view = $this->templateFinder->find(self::SUPPORT_SHORTCODES[$entityName]['view'], false, null);
             return $this->twig->render($view, [
                 $entityName => $ids,
