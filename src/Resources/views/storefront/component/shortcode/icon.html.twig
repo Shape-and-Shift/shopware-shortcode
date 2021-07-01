@@ -1,0 +1,7 @@
+{% block sas_shortcode_component_icon %}
+    {% for item in icon %}
+        {% sw_include "@Storefront/storefront/utilities/icon.html.twig" with {
+            'name': item
+        } %}
+    {% endfor %}
+{% endblock %}
