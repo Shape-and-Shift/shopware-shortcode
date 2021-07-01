@@ -22,6 +22,10 @@ class ShortCodeResolver
             'associations' => ['media'],
             'view' => '@Storefront/storefront/component/shortcode/category.html.twig',
         ],
+        'icon' => [
+            'associations' => [],
+            'view' => '@Storefront/storefront/component/shortcode/icon.html.twig',
+        ]
     ];
 
     private SalesChannelDefinitionInstanceRegistry $salesChannelDefinitionRegistry;
@@ -77,6 +81,13 @@ class ShortCodeResolver
         }
 
         $context = $salesChannelContext->getContext();
+
+        if ($entityName = 'icon') {
+            $view = $this->templateFinder->find(self::SUPPORT_SHORTCODES[$entityName]['view'], false, null);
+            return $this->twig->render($view, [
+                $entityName => $ids,
+            ]);
+        }
 
         try {
             $repository = $this->salesChannelDefinitionRegistry->getSalesChannelRepository($entityName);

@@ -1,9 +1,16 @@
 {
     "name": "sas/shortcode",
-    "description": "SasShortCode",
+    "description": "Use Wordpress like Shortcodes within the Text Editor of Shopware",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "keywords": ["shortcode", "shopware"],
+    "authors":[
+        {
+            "name":"Shape & Shift",
+            "role":"Manufacturer",
+            "homepage":"https://shapeandshift.dev"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "SasShortcode\\": "src/"
@@ -15,8 +22,12 @@
     "extra": {
         "shopware-plugin-class": "SasShortcode\\SasShortcode",
         "label": {
-            "de-DE": "SasShortCode plugin",
-            "en-GB": "SasShortCode plugin"
+            "de-DE": "Shortcodes",
+            "en-GB": "Shortcodes"
+        },
+        "description": {
+            "de-DE": "Nutze ahenlich wie bei Wordpress Shortcodes im Text Editor von Shopware",
+            "en-GB": "Use Wordpress like Shortcodes within the Text Editor of Shopware"
         },
         "manufacturerLink": {
             "en-GB": "https://shapeandshift.dev",
