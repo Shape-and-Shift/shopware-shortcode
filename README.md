@@ -10,10 +10,11 @@ Use Wordpress like Shortcodes within the Text Editor in Shopware 6.
 
 ### Configuration
 
-After the plugin installation, you are now able to use these two shortcodes from within the Shopware Editor or CMS page as well.
+After the plugin installation, you are now able to use these three shortcodes from within the Shopware Editor or CMS page as well.
 
 * `{{ product=firstProductId,secondProductId }}`
 * `{{ category=firstCategoryId,secondCategoryId }}`
+* `{{ icon=ICONNAME }}`, for example `{{ icon=heart }}`
 
 *We're currently working on more Shortcodes, like for example to have the ability to create columns with Shortcodes.*
 

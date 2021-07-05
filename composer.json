@@ -3,6 +3,7 @@
     "description": "Use Wordpress like Shortcodes within the Text Editor of Shopware",
     "type": "shopware-platform-plugin",
     "license": "MIT",
+    "version": "1.0.1",
     "keywords": ["shortcode", "shopware"],
     "authors":[
         {
