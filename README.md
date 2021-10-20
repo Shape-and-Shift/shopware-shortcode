@@ -16,6 +16,8 @@ After the plugin installation, you are now able to use these three shortcodes fr
 * `{{ category=firstCategoryId,secondCategoryId }}`
 * `{{ icon=ICONNAME }}`, for example `{{ icon=heart }}`
 
+After installation you also have a config option for the plugin to use custom theme icons, this can be enabled in the plugin configuration.
+
 *We're currently working on more Shortcodes, like for example to have the ability to create columns with Shortcodes.*
 
 ![Shortcode in texteditor](https://res.cloudinary.com/dtgdh7noz/image/upload/v1624259577/Bildschirmfoto_2021-06-21_um_10.10.54_nm7kke.png)
