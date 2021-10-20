@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>General Settings</title>
+
+        <input-field type="bool">
+            <name>themeIcons</name>
+
+            <label>Use theme icons</label>
+            <label lang="de-DE">Verwenden Sie Themensymbole</label>
+            <label lang="nl-NL">Thema iconen gebruiken</label>
+        </input-field>
+    </card>
+</config>
