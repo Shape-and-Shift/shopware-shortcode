@@ -1,7 +1,19 @@
 {% block sas_shortcode_component_icon %}
-    {% for item in icon %}
-        {% sw_include "@Storefront/storefront/utilities/icon.html.twig" with {
-            'name': item
-        } %}
-    {% endfor %}
+    {% if config('SasShortcode.config.themeIcons') %}
+        {# Custom theme icons #}
+        {% set namespace = app.request.get('theme-name') %}
+        {% for item in icon %}
+            {% sw_include "@Storefront/storefront/utilities/icon.html.twig" with {
+                'name': item,
+                'namespace': namespace
+            } %}
+        {% endfor %}
+    {% else %}
+        {# Default icons #}
+        {% for item in icon %}
+            {% sw_include "@Storefront/storefront/utilities/icon.html.twig" with {
+                'name': item
+            } %}
+        {% endfor %}
+    {% endif %}
 {% endblock %}
