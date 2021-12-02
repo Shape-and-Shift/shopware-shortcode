@@ -42,7 +42,7 @@ class ResponseSubscriber implements EventSubscriberInterface
 
         $host = $event->getRequest()->attributes->get(RequestTransformer::STOREFRONT_URL);
 
-        if ($content !== false) {
+        if ($content !== false && isset($host)) {
             $response->setContent(
                 $this->seoUrlReplacer->replace($content, $host, $salesChannelContext)
             );
