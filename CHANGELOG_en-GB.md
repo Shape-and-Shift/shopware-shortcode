@@ -1,3 +1,7 @@
+# 1.0.3
+
+- Fixed error when uploading media with Custom Products plugin
+
 # 1.0.2
 
 - Added configuration for custom theme icons
